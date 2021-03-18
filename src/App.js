@@ -1,9 +1,17 @@
-import './App.css'
+import './index.css'
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Template</h1>
+    <div className='grid-container'>
+      <header>
+        <a href='/'>React Shopping Cart</a>
+      </header>
+      <main>
+        Product List
+      </main>
+      <footer>
+        All rights reserved &copy;
+      </footer>
     </div>
   )
 }

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: #ff8000;
+}
+
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+
+body,
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+  /* font-family: 'Alegreya Sans', sans-serif; */
+  font-family: 'Poiret One', cursive;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  padding: .5rem;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+}
